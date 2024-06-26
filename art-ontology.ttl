@@ -1,0 +1,1293 @@
+@prefix : <http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix wiki: <https://www.wikidata.org/wiki/> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix art-ontology: <http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#> .
+@base <http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/> .
+
+<http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology> rdf:type owl:Ontology ;
+                                                                   owl:imports obo:bfo.owl .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+obo:IAO_0000115 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_A32
+obo:NCIT_A32 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_NHC0
+obo:NCIT_NHC0 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P106
+obo:NCIT_P106 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P108
+obo:NCIT_P108 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P207
+obo:NCIT_P207 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P322
+obo:NCIT_P322 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P366
+obo:NCIT_P366 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P375
+obo:NCIT_P375 rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P160i_is_temporal_projection_of
+cidoc-crm:P160i_is_temporal_projection_of rdf:type owl:AnnotationProperty ;
+                                          rdfs:domain cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P164i_temporally_specifies
+cidoc-crm:P164i_temporally_specifies rdf:type owl:AnnotationProperty ;
+                                     rdfs:domain cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P170i_time_is_defined_by
+cidoc-crm:P170i_time_is_defined_by rdf:type owl:AnnotationProperty ;
+                                   rdfs:domain cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P191_had_duration
+cidoc-crm:P191_had_duration rdf:type owl:AnnotationProperty ;
+                            rdfs:domain cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of
+cidoc-crm:P4i_is_time-span_of rdf:type owl:AnnotationProperty ;
+                              rdfs:domain cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P79_beginning_is_qualified_by
+cidoc-crm:P79_beginning_is_qualified_by rdf:type owl:AnnotationProperty ;
+                                        rdfs:domain cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P80_end_is_qualified_by
+cidoc-crm:P80_end_is_qualified_by rdf:type owl:AnnotationProperty ;
+                                  rdfs:domain cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P81_ongoing_throughout
+cidoc-crm:P81_ongoing_throughout rdf:type owl:AnnotationProperty ;
+                                 rdfs:domain cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P81a_end_of_the_begin
+cidoc-crm:P81a_end_of_the_begin rdf:type owl:AnnotationProperty ;
+                                rdfs:domain cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P81b_begin_of_the_end
+cidoc-crm:P81b_begin_of_the_end rdf:type owl:AnnotationProperty ;
+                                rdfs:domain cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within
+cidoc-crm:P82_at_some_time_within rdf:type owl:AnnotationProperty ;
+                                  rdfs:domain cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin
+cidoc-crm:P82a_begin_of_the_begin rdf:type owl:AnnotationProperty ;
+                                  rdfs:domain cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end
+cidoc-crm:P82b_end_of_the_end rdf:type owl:AnnotationProperty ;
+                              rdfs:domain cidoc-crm:E52_Time-Span .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#created_by
+oboInOwl:created_by rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#creation_date
+oboInOwl:creation_date rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+oboInOwl:hasDbXref rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+oboInOwl:hasExactSynonym rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym
+oboInOwl:hasNarrowSynonym rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+oboInOwl:hasOBONamespace rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+oboInOwl:hasRelatedSynonym rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+oboInOwl:id rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+oboInOwl:inSubset rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/alternateName
+schema:alternateName rdf:type owl:AnnotationProperty .
+
+
+###  https://www.wikidata.org/wiki/Q1823134
+wiki:Q1823134 rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.cidoc-crm.org/cidoc-crm/P160_has_temporal_projection
+cidoc-crm:P160_has_temporal_projection rdf:type owl:ObjectProperty ;
+                                       rdfs:range cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P164_is_temporally_specified_by
+cidoc-crm:P164_is_temporally_specified_by rdf:type owl:ObjectProperty ;
+                                          rdfs:range cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P191i_was_duration_of
+cidoc-crm:P191i_was_duration_of rdf:type owl:ObjectProperty ;
+                                rdfs:range cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span
+cidoc-crm:P4_has_time-span rdf:type owl:ObjectProperty ;
+                           rdfs:range cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P86_falls_within
+cidoc-crm:P86_falls_within rdf:type owl:ObjectProperty ;
+                           rdfs:domain cidoc-crm:E52_Time-Span ;
+                           rdfs:range cidoc-crm:E52_Time-Span .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P86i_contains
+cidoc-crm:P86i_contains rdf:type owl:ObjectProperty ;
+                        rdfs:domain cidoc-crm:E52_Time-Span ;
+                        rdfs:range cidoc-crm:E52_Time-Span .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#artisticMovementOfArtist
+art-ontology:artisticMovementOfArtist rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf art-ontology:bePartOfMovement .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#bePartOfMovement
+art-ontology:bePartOfMovement rdf:type owl:ObjectProperty ;
+                              rdfs:domain art-ontology:Artist ;
+                              rdfs:range art-ontology:ArtisticMovement .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#containsArtwork
+art-ontology:containsArtwork rdf:type owl:ObjectProperty ;
+                             owl:inverseOf art-ontology:exhibitedIn .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#createArtwork
+art-ontology:createArtwork rdf:type owl:ObjectProperty ;
+                           owl:inverseOf art-ontology:hasArtist .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#dateOfMade
+art-ontology:dateOfMade rdf:type owl:ObjectProperty ;
+                        owl:inverseOf art-ontology:madeInDate .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#dateOfWorkOf
+art-ontology:dateOfWorkOf rdf:type owl:ObjectProperty ;
+                          owl:inverseOf art-ontology:workInDate .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#exhibitedIn
+art-ontology:exhibitedIn rdf:type owl:ObjectProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain art-ontology:Artwork ;
+                         rdfs:range art-ontology:Museum .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#expertOfMovement
+art-ontology:expertOfMovement rdf:type owl:ObjectProperty ;
+                              owl:inverseOf art-ontology:hasExpert ;
+                              rdfs:domain art-ontology:Critic ;
+                              rdfs:range art-ontology:ArtisticMovement .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#hasArtist
+art-ontology:hasArtist rdf:type owl:ObjectProperty ;
+                       rdfs:domain art-ontology:Artwork ;
+                       rdfs:range art-ontology:Artist .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#hasArtisticMovement
+art-ontology:hasArtisticMovement rdf:type owl:ObjectProperty ;
+                                 owl:inverseOf art-ontology:isArtisticMovementOf ;
+                                 rdfs:domain art-ontology:Artwork ;
+                                 rdfs:range art-ontology:ArtisticMovement .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#hasCategory
+art-ontology:hasCategory rdf:type owl:ObjectProperty ;
+                         owl:inverseOf art-ontology:isCategoryOf ;
+                         rdf:type owl:FunctionalProperty ;
+                         rdfs:domain art-ontology:Artwork ;
+                         rdfs:range art-ontology:Category .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#hasEntranceType
+art-ontology:hasEntranceType rdf:type owl:ObjectProperty ;
+                             owl:inverseOf art-ontology:isEntranceTypeOf ;
+                             rdf:type owl:FunctionalProperty ;
+                             rdfs:domain art-ontology:Museum ;
+                             rdfs:range art-ontology:EntranceType .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#hasExpert
+art-ontology:hasExpert rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#hasRestorationDate
+art-ontology:hasRestorationDate rdf:type owl:ObjectProperty ;
+                                owl:inverseOf art-ontology:restorationDateOf ;
+                                rdfs:domain art-ontology:Artwork ;
+                                rdfs:range art-ontology:Timespan .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#hasRestoredTechnique
+art-ontology:hasRestoredTechnique rdf:type owl:ObjectProperty ;
+                                  owl:inverseOf art-ontology:restoredTechniqueOf .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#hasTechnique
+art-ontology:hasTechnique rdf:type owl:ObjectProperty ;
+                          owl:inverseOf art-ontology:isTechniqueOf ;
+                          rdfs:domain art-ontology:Artwork ;
+                          rdfs:range art-ontology:Technique .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#hasTypeOfView
+art-ontology:hasTypeOfView rdf:type owl:ObjectProperty ;
+                           owl:inverseOf art-ontology:isTypeOfViewOf ;
+                           rdf:type owl:FunctionalProperty ;
+                           rdfs:domain art-ontology:Artwork ;
+                           rdfs:range art-ontology:EntranceType .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#isArtisticMovementOf
+art-ontology:isArtisticMovementOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#isCategoryOf
+art-ontology:isCategoryOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#isCollaborator
+art-ontology:isCollaborator rdf:type owl:ObjectProperty ,
+                                     owl:SymmetricProperty ;
+                            rdfs:domain art-ontology:Restaurator ;
+                            rdfs:range art-ontology:Restaurator .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#isEntranceTypeOf
+art-ontology:isEntranceTypeOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#isLocationOf
+art-ontology:isLocationOf rdf:type owl:ObjectProperty ;
+                          owl:inverseOf art-ontology:locatedIn .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#isMaterialOf
+art-ontology:isMaterialOf rdf:type owl:ObjectProperty ;
+                          owl:inverseOf art-ontology:madeOf .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#isTechniqueOf
+art-ontology:isTechniqueOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#isTypeOfViewOf
+art-ontology:isTypeOfViewOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#locatedIn
+art-ontology:locatedIn rdf:type owl:ObjectProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain art-ontology:Museum ;
+                       rdfs:range art-ontology:Nation .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#madeInDate
+art-ontology:madeInDate rdf:type owl:ObjectProperty ;
+                        rdfs:domain art-ontology:Artwork ;
+                        rdfs:range art-ontology:Timespan .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#madeOf
+art-ontology:madeOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain art-ontology:Artwork ;
+                    rdfs:range art-ontology:Material .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#restorationDateOf
+art-ontology:restorationDateOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#restoredArtwork
+art-ontology:restoredArtwork rdf:type owl:ObjectProperty ;
+                             owl:inverseOf art-ontology:restoredBy .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#restoredBy
+art-ontology:restoredBy rdf:type owl:ObjectProperty ;
+                        rdfs:domain art-ontology:Artwork ;
+                        rdfs:range art-ontology:Restaurator .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#restoredTechniqueOf
+art-ontology:restoredTechniqueOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#reviewArtwork
+art-ontology:reviewArtwork rdf:type owl:ObjectProperty ;
+                           owl:inverseOf art-ontology:reviewedBy .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#reviewedBy
+art-ontology:reviewedBy rdf:type owl:ObjectProperty ;
+                        rdfs:domain art-ontology:Artwork ;
+                        rdfs:range art-ontology:Critic .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#techniqueOfArtist
+art-ontology:techniqueOfArtist rdf:type owl:ObjectProperty ;
+                               owl:inverseOf art-ontology:usesTechnique .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#techniqueUsedBy
+art-ontology:techniqueUsedBy rdf:type owl:ObjectProperty ;
+                             owl:inverseOf art-ontology:usesTechnique .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#toolOfTechnique
+art-ontology:toolOfTechnique rdf:type owl:ObjectProperty ;
+                             owl:inverseOf art-ontology:usesTool .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#usesTechnique
+art-ontology:usesTechnique rdf:type owl:ObjectProperty ;
+                           rdfs:domain art-ontology:Artist ;
+                           rdfs:range art-ontology:Technique .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#usesTool
+art-ontology:usesTool rdf:type owl:ObjectProperty ;
+                      rdfs:domain art-ontology:Technique ;
+                      rdfs:range art-ontology:Tool .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#workInDate
+art-ontology:workInDate rdf:type owl:ObjectProperty ;
+                        rdfs:domain art-ontology:Restaurator ;
+                        rdfs:range art-ontology:Timespan .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#height
+art-ontology:height rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#width
+art-ontology:width rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:decimal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000040
+obo:BFO_0000040 owl:equivalentClass art-ontology:Material .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000009
+obo:ENVO_00000009 rdf:type owl:Class ;
+                  owl:equivalentClass art-ontology:Nation ;
+                  rdfs:subClassOf obo:ENVO_00000123 ;
+                  obo:IAO_0000115 "A political association with effective dominion over a geographic area." ;
+                  oboInOwl:hasDbXref "FTT:424" ,
+                                     "FTT:566" ,
+                                     "FTT:567" ,
+                                     "FTT:571" ,
+                                     "SWEETRealm:Country" ,
+                                     "SWEETRealm:State" ,
+                                     "TGN:80006" ,
+                                     "TGN:81010" ,
+                                     "TGN:81011" ,
+                                     "TGN:81102" ,
+                                     "https://en.wikipedia.org/wiki/Nation" ;
+                  oboInOwl:hasExactSynonym "nation" ;
+                  oboInOwl:hasNarrowSynonym "independent nation" ,
+                                            "independent political entity" ,
+                                            "independent sovereign nation" ;
+                  oboInOwl:hasRelatedSynonym "country" ,
+                                             "political entity" ,
+                                             "state" ;
+                  rdfs:label "national geopolitical entity" .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000123
+obo:ENVO_00000123 rdf:type owl:Class ;
+                  rdfs:label "political entity" .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002040
+obo:ENVO_00002040 rdf:type owl:Class ;
+                  owl:equivalentClass art-ontology:Wood ;
+                  rdfs:subClassOf obo:ENVO_01000155 ,
+                                  obo:ENVO_01000814 ;
+                  oboInOwl:hasDbXref "EcoLexicon:wood" ,
+                                     "LTER:637" ,
+                                     "SWEETRealm:Wood" ,
+                                     "https://en.wikipedia.org/wiki/Wood" ;
+                  oboInOwl:hasOBONamespace "ENVO" ;
+                  oboInOwl:id "ENVO:00002040" ;
+                  rdfs:label "wood" .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01000155
+obo:ENVO_01000155 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000040 ;
+                  rdfs:label "organic material" .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01000814
+obo:ENVO_01000814 rdf:type owl:Class ;
+                  rdfs:label "solid environmental material"@en .
+
+
+###  http://purl.obolibrary.org/obo/GSSO_004224
+obo:GSSO_004224 rdf:type owl:Class ;
+                rdfs:label "museum"@en .
+
+
+###  http://purl.obolibrary.org/obo/GSSO_004233
+obo:GSSO_004233 rdf:type owl:Class ;
+                owl:equivalentClass art-ontology:Museum ;
+                rdfs:subClassOf obo:GSSO_004224 ;
+                obo:IAO_0000115 "A building or space for the display of art, usually from the museum's own collection."@en ;
+                oboInOwl:hasDbXref "https://en.wikipedia.org/wiki/Art_museum"^^xsd:anyURI ,
+                                   "https://www.wikidata.org/wiki/Q207694"^^xsd:anyURI ;
+                rdfs:label "art museum"@en ;
+                schema:alternateName "art museums"@en ;
+                wiki:Q1823134 "http://id.loc.gov/authorities/subjects/sh85008026"^^xsd:anyURI .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C25193
+obo:NCIT_C25193 rdf:type owl:Class ;
+                rdfs:label "Occupation" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C80245
+obo:NCIT_C80245 rdf:type owl:Class ;
+                owl:equivalentClass art-ontology:Artist ;
+                rdfs:subClassOf obo:NCIT_C97625 ;
+                obo:IAO_0000115 "One who uses imagination and talent or skill to create works of aesthetic value." ;
+                obo:NCIT_A32 obo:NCIT_C25193 ;
+                obo:NCIT_NHC0 "C80245" ;
+                obo:NCIT_P106 "Occupation or Discipline" ;
+                obo:NCIT_P108 "Artist" ;
+                obo:NCIT_P207 "C0402043" ;
+                obo:NCIT_P322 "GDC" ;
+                obo:NCIT_P366 "Artist" ;
+                obo:NCIT_P375 "Creative and Performing Artists" ;
+                oboInOwl:hasExactSynonym "Artist" ,
+                                         "Creative and Performing Artist" ,
+                                         "Creative and Performing Artists" ;
+                rdfs:label "Artist" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C97625
+obo:NCIT_C97625 rdf:type owl:Class ;
+                rdfs:label "Arts, Design, Entertainment, Sports and Media Occupations" .
+
+
+###  http://purl.obolibrary.org/obo/XCO_0000341
+obo:XCO_0000341 rdf:type owl:Class ;
+                rdfs:label "chemical with specified function" .
+
+
+###  http://purl.obolibrary.org/obo/XCO_0001231
+obo:XCO_0001231 rdf:type owl:Class ;
+                owl:equivalentClass art-ontology:Solvent ;
+                rdfs:subClassOf obo:XCO_0000341 ;
+                obo:IAO_0000115 "This is any condition in which the main influencing factor is a solvent, a liquid that can dissolve other substances (solutes) without any change in their chemical composition." ;
+                oboInOwl:created_by "slaulederkind" ;
+                oboInOwl:creation_date "2024-01-11T16:13:49Z" ;
+                oboInOwl:hasDbXref "MESH:D012997" ;
+                oboInOwl:hasNarrowSynonym "solvents" ;
+                oboInOwl:hasOBONamespace "experimental_condition_ontology" ;
+                oboInOwl:id "XCO:0001231" ;
+                rdfs:label "solvent" .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity
+cidoc-crm:E1_CRM_Entity rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span
+cidoc-crm:E52_Time-Span rdf:type owl:Class ;
+                        owl:equivalentClass art-ontology:Timespan ;
+                        rdfs:subClassOf cidoc-crm:E1_CRM_Entity ;
+                        rdfs:comment """This class comprises abstract temporal extents, in the sense of Galilean physics, having a beginning, an end and a duration.
+Instances of E52 Time-Span have no semantic connotations about phenomena happening within the temporal extent they represent. They do not convey any meaning other than a positioning on the “time-line” of chronology. The actual extent of an instance of E52 Time-Span can be approximated by properties of E52 Time-Span giving inner and outer bounds in the form of dates (instances of E61 Time Primitive). Comparing knowledge about time-spans is fundamental for chronological reasoning.
+Some instances of E52 Time-Span may be defined as the actual, in principle observable, temporal extent of instances of E2 Temporal Entity via the property P4 has time-span (is time-span of): E52 Time-Span. They constitute phenomenal time-spans as defined in CRMgeo (Doerr &amp; Hiebel 2013). Since our knowledge of history is imperfect and physical phenomena are fuzzy in nature, the extent of phenomenal time-spans can only be described in approximation. An extreme case of approximation, might, for example, define an instance of E52 Time-Span having unknown beginning, end and duration. It may, nevertheless, be associated with other descriptions by which we can infer knowledge about it, such as in relative chronologies.
+Some instances of E52 may be defined precisely as representing a declaration of a temporal extent, as, for instance, done in a business contract. They constitute declarative time-spans as defined in CRMgeo (Doerr &amp; Hiebel 2013) and can be described via the property E61 Time Primitive P170 defines time (time is defined by): E52 Time-Span.
+When used as a common E52 Time-Span for two events, it will nevertheless describe them as being simultaneous, even if nothing else is known.""" ;
+                        rdfs:label "Intervalle temporel"@fr ,
+                                   "Período de Tempo"@pt ,
+                                   "Time-Span"@en ,
+                                   "Zeitspanne"@de ,
+                                   "Χρονικό Διάστημα"@el ,
+                                   "Интервал Времени"@ru ,
+                                   "时段"@zh .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Architecture
+art-ontology:Architecture rdf:type owl:Class ;
+                          rdfs:subClassOf art-ontology:Category .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Artist
+art-ontology:Artist rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#ArtisticMovement
+art-ontology:ArtisticMovement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Artwork
+art-ontology:Artwork rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Brush
+art-ontology:Brush rdf:type owl:Class ;
+                   rdfs:subClassOf art-ontology:Tool .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Canvas
+art-ontology:Canvas rdf:type owl:Class ;
+                    rdfs:subClassOf art-ontology:Material .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Category
+art-ontology:Category rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Critic
+art-ontology:Critic rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Digital
+art-ontology:Digital rdf:type owl:Class ;
+                     rdfs:subClassOf art-ontology:Category .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#EntranceType
+art-ontology:EntranceType rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Grinder
+art-ontology:Grinder rdf:type owl:Class ;
+                     rdfs:subClassOf art-ontology:Tool .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Hammer
+art-ontology:Hammer rdf:type owl:Class ;
+                    rdfs:subClassOf art-ontology:Tool .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Installation
+art-ontology:Installation rdf:type owl:Class ;
+                          rdfs:subClassOf art-ontology:Category .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Marble
+art-ontology:Marble rdf:type owl:Class ;
+                    rdfs:subClassOf art-ontology:Material .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Material
+art-ontology:Material rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Museum
+art-ontology:Museum rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Nation
+art-ontology:Nation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Painting
+art-ontology:Painting rdf:type owl:Class ;
+                      rdfs:subClassOf art-ontology:Category .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Paper
+art-ontology:Paper rdf:type owl:Class ;
+                   rdfs:subClassOf art-ontology:Material .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Performance
+art-ontology:Performance rdf:type owl:Class ;
+                         rdfs:subClassOf art-ontology:Category .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Photography
+art-ontology:Photography rdf:type owl:Class ;
+                         rdfs:subClassOf art-ontology:Category .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Restaurator
+art-ontology:Restaurator rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Sculpture
+art-ontology:Sculpture rdf:type owl:Class ;
+                       rdfs:subClassOf art-ontology:Category .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Solvent
+art-ontology:Solvent rdf:type owl:Class ;
+                     rdfs:subClassOf art-ontology:Tool .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Technique
+art-ontology:Technique rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Timespan
+art-ontology:Timespan rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Tool
+art-ontology:Tool rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Tweezer
+art-ontology:Tweezer rdf:type owl:Class ;
+                     rdfs:subClassOf art-ontology:Tool .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Wood
+art-ontology:Wood rdf:type owl:Class ;
+                  rdfs:subClassOf art-ontology:Material .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#AntoniGaudì
+art-ontology:AntoniGaudì rdf:type owl:NamedIndividual ,
+                                  obo:NCIT_C80245 ;
+                         art-ontology:createArtwork art-ontology:SagradaFamilia .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Cardboard
+art-ontology:Cardboard rdf:type owl:NamedIndividual ,
+                                art-ontology:Paper .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#CarraraMarble
+art-ontology:CarraraMarble rdf:type owl:NamedIndividual ,
+                                    art-ontology:Marble .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Carving
+art-ontology:Carving rdf:type owl:NamedIndividual ,
+                              art-ontology:Technique .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Cathedral
+art-ontology:Cathedral rdf:type owl:NamedIndividual ,
+                                art-ontology:Architecture .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#David
+art-ontology:David rdf:type owl:NamedIndividual ,
+                            art-ontology:Artwork ;
+                   art-ontology:exhibitedIn :Uffizi ;
+                   art-ontology:hasArtist art-ontology:MichelangeloBuonarroti ;
+                   art-ontology:hasArtisticMovement :Renaissance ;
+                   art-ontology:hasCategory art-ontology:FullRilief ;
+                   art-ontology:hasRestoredTechnique art-ontology:Washing ;
+                   art-ontology:hasTechnique art-ontology:Carving ;
+                   art-ontology:madeOf art-ontology:CarraraMarble .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#DeionizedWater
+art-ontology:DeionizedWater rdf:type owl:NamedIndividual ,
+                                     art-ontology:Solvent ;
+                            art-ontology:toolOfTechnique art-ontology:Washing .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Free
+art-ontology:Free rdf:type owl:NamedIndividual ,
+                           art-ontology:EntranceType .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#FullRilief
+art-ontology:FullRilief rdf:type owl:NamedIndividual ,
+                                 art-ontology:Sculpture .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#GiovanniBelli
+art-ontology:GiovanniBelli rdf:type owl:NamedIndividual ,
+                                    art-ontology:Critic ;
+                           art-ontology:expertOfMovement :ModernArt ;
+                           art-ontology:reviewArtwork :Guernica .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#GiulioMorandi
+art-ontology:GiulioMorandi rdf:type owl:NamedIndividual ,
+                                    art-ontology:Restaurator ;
+                           owl:differentFrom art-ontology:LucaRossi ;
+                           art-ontology:isCollaborator art-ontology:GiulioMorandi ,
+                                                       art-ontology:LucaRossi ;
+                           art-ontology:restoredArtwork :TheBirthOfVenus ;
+                           art-ontology:workInDate <http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#10-01-2001> .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Linen
+art-ontology:Linen rdf:type owl:NamedIndividual ,
+                            art-ontology:Canvas .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#LucaRossi
+art-ontology:LucaRossi rdf:type owl:NamedIndividual ,
+                                art-ontology:Restaurator ;
+                       art-ontology:isCollaborator art-ontology:GiulioMorandi ,
+                                                   art-ontology:LucaRossi ;
+                       art-ontology:restoredArtwork :TheBirthOfVenus ;
+                       art-ontology:workInDate <http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#10-01-2001> .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#MichelangeloBuonarroti
+art-ontology:MichelangeloBuonarroti rdf:type owl:NamedIndividual ,
+                                             obo:NCIT_C80245 .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Payment
+art-ontology:Payment rdf:type owl:NamedIndividual ,
+                              art-ontology:EntranceType ;
+                     art-ontology:isEntranceTypeOf :Louvre ;
+                     art-ontology:isTypeOfViewOf :MonaLisa .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Poplar
+art-ontology:Poplar rdf:type owl:NamedIndividual ,
+                             art-ontology:Wood .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#RobertoBianchi
+art-ontology:RobertoBianchi rdf:type owl:NamedIndividual ,
+                                     art-ontology:Restaurator ;
+                            art-ontology:restoredArtwork :TheBirthOfVenus .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#SagradaFamilia
+art-ontology:SagradaFamilia rdf:type owl:NamedIndividual ,
+                                     art-ontology:Artwork ;
+                            art-ontology:hasCategory art-ontology:Cathedral .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#SyntheticBrush
+art-ontology:SyntheticBrush rdf:type owl:NamedIndividual ,
+                                     art-ontology:Brush ;
+                            art-ontology:toolOfTechnique art-ontology:Washing .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#Washing
+art-ontology:Washing rdf:type owl:NamedIndividual ,
+                              art-ontology:Technique .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#10-01-2001
+<http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#10-01-2001> rdf:type owl:NamedIndividual ,
+                                                                                      art-ontology:Timespan ;
+                                                                             art-ontology:restorationDateOf :TheBirthOfVenus .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#1503-1504
+<http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#1503-1504> rdf:type owl:NamedIndividual ,
+                                                                                     art-ontology:Timespan .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/Cubism
+:Cubism rdf:type owl:NamedIndividual ,
+                 art-ontology:ArtisticMovement .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/EdvardMunch
+:EdvardMunch rdf:type owl:NamedIndividual ,
+                      art-ontology:Artist ;
+             art-ontology:createArtwork :TheScream .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/Expressionism
+:Expressionism rdf:type owl:NamedIndividual ,
+                        art-ontology:ArtisticMovement .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/France
+:France rdf:type owl:NamedIndividual ,
+                 art-ontology:Nation ;
+        art-ontology:isLocationOf :Louvre .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/Guernica
+:Guernica rdf:type owl:NamedIndividual ,
+                   art-ontology:Artwork ;
+          art-ontology:exhibitedIn :ReinaSofia ;
+          art-ontology:hasArtist :PabloPicasso ;
+          art-ontology:hasArtisticMovement :Cubism ;
+          art-ontology:hasTechnique :OilPainting ;
+          art-ontology:reviewedBy art-ontology:GiovanniBelli ;
+          art-ontology:height 349.3 ;
+          art-ontology:width 776.6 .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/Italy
+:Italy rdf:type owl:NamedIndividual ,
+                art-ontology:Nation ;
+       art-ontology:isLocationOf :Uffizi .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/Landscape
+:Landscape rdf:type owl:NamedIndividual ,
+                    art-ontology:Painting ,
+                    art-ontology:Photography .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/LeonardoDaVinci
+:LeonardoDaVinci rdf:type owl:NamedIndividual ,
+                          art-ontology:Artist ;
+                 art-ontology:createArtwork :MonaLisa .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/Louvre
+:Louvre rdf:type owl:NamedIndividual ,
+                 art-ontology:Museum ;
+        art-ontology:containsArtwork :MonaLisa ;
+        art-ontology:hasEntranceType art-ontology:Payment ;
+        art-ontology:locatedIn :France .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/MoMA
+:MoMA rdf:type owl:NamedIndividual ,
+               art-ontology:Museum ;
+      art-ontology:containsArtwork :StarryNight ,
+                                   :ThePersistenceOfMemory ;
+      art-ontology:hasEntranceType art-ontology:Payment ;
+      art-ontology:locatedIn :USA .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/ModernArt
+:ModernArt rdf:type owl:NamedIndividual ,
+                    art-ontology:ArtisticMovement ;
+           art-ontology:hasExpert art-ontology:GiovanniBelli .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/MonaLisa
+:MonaLisa rdf:type owl:NamedIndividual ,
+                   art-ontology:Artwork ;
+          art-ontology:exhibitedIn :Louvre ;
+          art-ontology:hasArtist :LeonardoDaVinci ;
+          art-ontology:hasArtisticMovement :Renaissance ;
+          art-ontology:hasCategory :Portrait ;
+          art-ontology:hasTechnique :OilPainting ;
+          art-ontology:hasTypeOfView art-ontology:Payment ;
+          art-ontology:madeInDate <http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#1503-1504> ;
+          art-ontology:madeOf art-ontology:Poplar ;
+          art-ontology:height 53.0 ,
+                              77.0 .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/NationalGalleryOslo
+:NationalGalleryOslo rdf:type owl:NamedIndividual ,
+                              art-ontology:Museum ;
+                     art-ontology:containsArtwork :TheScream ;
+                     art-ontology:hasEntranceType art-ontology:Free ;
+                     art-ontology:locatedIn :Norway .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/Norway
+:Norway rdf:type owl:NamedIndividual ,
+                 art-ontology:Nation ;
+        art-ontology:isLocationOf :NationalGalleryOslo .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/OilPainting
+:OilPainting rdf:type owl:NamedIndividual ,
+                      art-ontology:Technique ;
+             art-ontology:isTechniqueOf :Guernica ,
+                                        :MonaLisa ,
+                                        :StarryNight ,
+                                        :ThePersistenceOfMemory .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/OilPastel
+:OilPastel rdf:type owl:NamedIndividual ,
+                    art-ontology:Technique ;
+           art-ontology:isTechniqueOf :TheScream .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/PabloPicasso
+:PabloPicasso rdf:type owl:NamedIndividual ;
+              art-ontology:createArtwork :Guernica .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/Portrait
+:Portrait rdf:type owl:NamedIndividual ,
+                   art-ontology:Painting .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/PostImpressionism
+:PostImpressionism rdf:type owl:NamedIndividual ,
+                            art-ontology:ArtisticMovement .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/ReinaSofia
+:ReinaSofia rdf:type owl:NamedIndividual ,
+                     art-ontology:Museum ;
+            art-ontology:containsArtwork :Guernica ;
+            art-ontology:hasEntranceType art-ontology:Payment ;
+            art-ontology:locatedIn :Spain .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/Renaissance
+:Renaissance rdf:type owl:NamedIndividual ,
+                      art-ontology:ArtisticMovement .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/SalvadorDali
+:SalvadorDali rdf:type owl:NamedIndividual ,
+                       art-ontology:Artist ;
+              art-ontology:createArtwork :ThePersistenceOfMemory .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/SandroBotticelli
+:SandroBotticelli rdf:type owl:NamedIndividual ,
+                           art-ontology:Artist ;
+                  art-ontology:createArtwork :TheBirthOfVenus .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/Spain
+:Spain rdf:type owl:NamedIndividual ,
+                art-ontology:Nation ;
+       art-ontology:isLocationOf :ReinaSofia .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/StarryNight
+:StarryNight rdf:type owl:NamedIndividual ,
+                      art-ontology:Artwork ;
+             art-ontology:exhibitedIn :MoMA ;
+             art-ontology:hasArtist :VincentVanGogh ;
+             art-ontology:hasArtisticMovement :ModernArt ;
+             art-ontology:hasCategory :Landscape ;
+             art-ontology:hasTechnique :OilPainting ;
+             art-ontology:height 73.7 ;
+             art-ontology:width 92.1 .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/Surrealism
+:Surrealism rdf:type owl:NamedIndividual ,
+                     art-ontology:ArtisticMovement .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/Tempera
+:Tempera rdf:type owl:NamedIndividual ,
+                  art-ontology:Technique ;
+         art-ontology:isTechniqueOf :TheBirthOfVenus .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/TheBirthOfVenus
+:TheBirthOfVenus rdf:type owl:NamedIndividual ,
+                          art-ontology:Artwork ;
+                 art-ontology:exhibitedIn :Uffizi ;
+                 art-ontology:hasArtist :SandroBotticelli ;
+                 art-ontology:hasArtisticMovement :Renaissance ;
+                 art-ontology:hasRestorationDate <http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology#10-01-2001> ;
+                 art-ontology:hasTechnique :Tempera ;
+                 art-ontology:madeOf art-ontology:Linen ;
+                 art-ontology:restoredBy art-ontology:GiulioMorandi ,
+                                         art-ontology:LucaRossi ,
+                                         art-ontology:RobertoBianchi ;
+                 art-ontology:height 172.5 ;
+                 art-ontology:width 278.5 .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/ThePersistenceOfMemory
+:ThePersistenceOfMemory rdf:type owl:NamedIndividual ,
+                                 art-ontology:Artwork ;
+                        art-ontology:exhibitedIn :MoMA ;
+                        art-ontology:hasArtist :SalvadorDali ;
+                        art-ontology:hasArtisticMovement :Expressionism ,
+                                                         :Surrealism ;
+                        art-ontology:hasTechnique :OilPainting ;
+                        art-ontology:madeOf art-ontology:Linen ;
+                        art-ontology:height 24.0 ;
+                        art-ontology:width 33.0 .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/TheScream
+:TheScream rdf:type owl:NamedIndividual ,
+                    art-ontology:Artwork ;
+           art-ontology:exhibitedIn :NationalGalleryOslo ;
+           art-ontology:hasArtist :EdvardMunch ;
+           art-ontology:hasTechnique :OilPastel ;
+           art-ontology:madeOf art-ontology:Cardboard ;
+           art-ontology:height 91.0 ;
+           art-ontology:width 73.5 .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/USA
+:USA rdf:type owl:NamedIndividual ,
+              art-ontology:Nation ;
+     art-ontology:isLocationOf :MoMA .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/Uffizi
+:Uffizi rdf:type owl:NamedIndividual ,
+                 art-ontology:Museum ;
+        art-ontology:containsArtwork :TheBirthOfVenus ;
+        art-ontology:hasEntranceType art-ontology:Payment ;
+        art-ontology:locatedIn :Italy .
+
+
+###  http://www.semanticweb.org/pietr/ontologies/2024/4/art-ontology/VincentVanGogh
+:VincentVanGogh rdf:type owl:NamedIndividual ,
+                         art-ontology:Artist ;
+                art-ontology:createArtwork :StarryNight .
+
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+#################################################################
+#    Rules
+#################################################################
+
+:m rdf:type swrl:Variable .
+
+:a rdf:type swrl:Variable .
+
+:e rdf:type swrl:Variable .
+
+:o rdf:type swrl:Variable .
+
+:t rdf:type swrl:Variable .
+
+:r1 rdf:type swrl:Variable .
+
+:r2 rdf:type swrl:Variable .
+
+:d rdf:type swrl:Variable .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "ArtistBePartOfMovement" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate art-ontology:createArtwork ;
+                           swrl:argument1 :a ;
+                           swrl:argument2 :o
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate art-ontology:hasArtisticMovement ;
+                                      swrl:argument1 :o ;
+                                      swrl:argument2 :m
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate art-ontology:bePartOfMovement ;
+                           swrl:argument1 :a ;
+                           swrl:argument2 :m
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "ArtistUsesTechnique" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate art-ontology:createArtwork ;
+                           swrl:argument1 :a ;
+                           swrl:argument2 :o
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate art-ontology:hasTechnique ;
+                                      swrl:argument1 :o ;
+                                      swrl:argument2 :t
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate art-ontology:usesTechnique ;
+                           swrl:argument1 :a ;
+                           swrl:argument2 :t
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Collaborator" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate art-ontology:restoredArtwork ;
+                           swrl:argument1 :r1 ;
+                           swrl:argument2 :a
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate art-ontology:restoredArtwork ;
+                                      swrl:argument1 :r2 ;
+                                      swrl:argument2 :a
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate art-ontology:workInDate ;
+                                                 swrl:argument1 :r1 ;
+                                                 swrl:argument2 :d
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate art-ontology:workInDate ;
+                                                            swrl:argument1 :r2 ;
+                                                            swrl:argument2 :d
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate art-ontology:hasRestorationDate ;
+                                                                       swrl:argument1 :a ;
+                                                                       swrl:argument2 :d
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:DifferentIndividualsAtom ;
+                                                                                  swrl:argument1 :r1 ;
+                                                                                  swrl:argument2 :r2
+                                                                                ] ;
+                                                                      rdf:rest rdf:nil
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate art-ontology:isCollaborator ;
+                           swrl:argument1 :r1 ;
+                           swrl:argument2 :r2
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "" ;
+   rdfs:label "TypeOfView" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate art-ontology:containsArtwork ;
+                           swrl:argument1 :m ;
+                           swrl:argument2 :a
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate art-ontology:hasEntranceType ;
+                                      swrl:argument1 :m ;
+                                      swrl:argument2 :e
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate art-ontology:hasTypeOfView ;
+                           swrl:argument1 :a ;
+                           swrl:argument2 :e
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
